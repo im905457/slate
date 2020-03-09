@@ -21,19 +21,16 @@ search: true
 
 # Introduction
 
-Welcome to the kono smarticle API! You can use our API to access API endpoints, which can get content of magazines, articles, and various article assets in kono smarticle reading service.
+Welcome to the Kono smarticle API! You can use our API to access API endpoints, which can get content of magazines, articles, and various article assets in Kono smarticle reading service.
 
-### HOST
+### Version
 
-env | host
---- | -----------
-prod | TBD
-dev  | https://smarticle-api.sandbox.thekono.com
+Current version: v1
 
 # Authentication
 
 Kono smarticle expects for the API key to be included in all API requests to the server in a header that looks like the following:
 
-`X-Smarticle-Id: smarticle_api_key`
+`X-Smarticle-Id: {smarticle_api_key}`
 
 You must replace <code>smarticle_api_key</code> with your API key.
