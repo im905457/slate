@@ -196,7 +196,7 @@
   color: #f92672;
 }
     </style>
-    <link href="stylesheets/screen-72ecf1a0.css" rel="stylesheet" media="screen" />
+    <link href="stylesheets/screen-5a7af1cc.css" rel="stylesheet" media="screen" />
     <link href="stylesheets/print-bccf8c07.css" rel="stylesheet" media="print" />
       <script src="javascripts/all-c5541673.js"></script>
   </head>
@@ -209,7 +209,7 @@
       </span>
     </a>
     <div class="toc-wrapper">
-      <img src="images/logo-1e815a84.png" class="logo" alt="Logo" />
+      <img src="images/logo-f51ca023.png" class="logo" alt="Logo" />
         <div class="lang-selector">
               <a href="#" data-language-name="response">response</a>
         </div>
@@ -221,9 +221,6 @@
           <li>
             <a href="#introduction" class="toc-h1 toc-link" data-title="Introduction">Introduction</a>
               <ul class="toc-list-h2">
-                  <li>
-                    <a href="#endpoint" class="toc-h2 toc-link" data-title="Endpoint">Endpoint</a>
-                  </li>
                   <li>
                     <a href="#version" class="toc-h2 toc-link" data-title="Version">Version</a>
                   </li>
@@ -329,28 +326,12 @@
       <div class="content">
         <h1 id='introduction'>Introduction</h1>
 <p>Welcome to the Kono smarticle API! You can use our API to access API endpoints, which can get content of magazines, articles, and various article assets in Kono smarticle reading service.</p>
-<h3 id='endpoint'>Endpoint</h3>
-<table><thead>
-<tr>
-<th>env</th>
-<th>host</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>prod</td>
-<td>TBD</td>
-</tr>
-<tr>
-<td>dev</td>
-<td>https://smarticle-api.sandbox.thekono.com</td>
-</tr>
-</tbody></table>
 <h3 id='version'>Version</h3>
 <p>Current version: v1</p>
 <h1 id='authentication'>Authentication</h1>
 <p>Kono smarticle expects for the API key to be included in all API requests to the server in a header that looks like the following:</p>
 
-<p><code>X-Smarticle-Id: smarticle_api_key</code></p>
+<p><code>X-Smarticle-Id: {smarticle_api_key}</code></p>
 
 <p>You must replace <code>smarticle_api_key</code> with your API key.</p>
 <h1 id='magazines'>Magazines</h1><h2 id='get-all-magazines'>Get all magazines</h2>
@@ -369,7 +350,7 @@
 </span></code></pre>
 <p>This endpoint retrieves all magazines.</p>
 <h3 id='http-request'>HTTP Request</h3>
-<p><code>GET /v1/magazines</code></p>
+<p><code>GET /magazines</code></p>
 <h2 id='get-a-specific-magazine'>Get a specific magazine</h2>
 <blockquote>
 <p>API returns JSON structured like this:</p>
@@ -384,7 +365,7 @@
 </span></code></pre>
 <p>This endpoint retrieves a specific magazine.</p>
 <h3 id='http-request-2'>HTTP Request</h3>
-<p><code>GET /v1/magazines/{magazine_id}</code></p>
+<p><code>GET /magazines/{magazine_id}</code></p>
 <h1 id='issues'>Issues</h1><h2 id='get-all-issues-of-a-magazine'>Get all issues of a magazine</h2>
 <blockquote>
 <p>API returns JSON structured like this:</p>
@@ -415,7 +396,7 @@
 </span></code></pre>
 <p>This endpoint retrieves all issues of a magazine.</p>
 <h3 id='http-request'>HTTP Request</h3>
-<p><code>GET /v1/magazines/{magazine_id}/issues</code></p>
+<p><code>GET /magazines/{magazine_id}/issues</code></p>
 <h2 id='get-a-specific-issue'>Get a specific issue</h2>
 <blockquote>
 <p>API returns JSON structured like this:</p>
@@ -444,7 +425,7 @@
 </span></code></pre>
 <p>This endpoint retrieves a specific issue.</p>
 <h3 id='http-request-2'>HTTP Request</h3>
-<p><code>GET /v1/issues/{issue_id}</code></p>
+<p><code>GET /issues/{issue_id}</code></p>
 <h2 id='get-price-of-a-specific-issue'>Get price of a specific issue</h2>
 <blockquote>
 <p>API returns JSON structured like this:</p>
@@ -455,11 +436,11 @@
 </span></code></pre>
 <p>This endpoint retrieves price of a specific issue.</p>
 <h3 id='http-request-3'>HTTP Request</h3>
-<p><code>GET /v1/issues/{issue_id}/price</code></p>
+<p><code>GET /issues/{issue_id}/price</code></p>
 <h2 id='get-cover-of-a-specific-issue'>Get cover of a specific issue</h2>
 <p>This endpoint retrieves cover of a specific issue.</p>
 <h3 id='http-request-4'>HTTP Request</h3>
-<p><code>GET /v1/issues/{issue_id}/cover(/{size})</code></p>
+<p><code>GET /issues/{issue_id}/cover(/{size})</code></p>
 <h3 id='query-parameters'>Query Parameters</h3>
 <table><thead>
 <tr>
@@ -507,7 +488,7 @@
 </span></code></pre>
 <p>This endpoint retrieves all articles of a issue.</p>
 <h3 id='http-request'>HTTP Request</h3>
-<p><code>GET /v1/issues/{issue_id}/articles</code></p>
+<p><code>GET /issues/{issue_id}/articles</code></p>
 <h2 id='get-a-specific-article'>Get a specific article</h2>
 <blockquote>
 <p>API returns JSON structured like this:</p>
@@ -534,11 +515,11 @@
 </span></code></pre>
 <p>This endpoint retrieves a specific article.</p>
 <h3 id='http-request-2'>HTTP Request</h3>
-<p><code>GET /v1/articles/{article_id}</code></p>
+<p><code>GET /articles/{article_id}</code></p>
 <h2 id='get-main-image-of-a-specific-article'>Get main image of a specific article</h2>
 <p>This endpoint retrieves main image of a specific article.</p>
 <h3 id='http-request-3'>HTTP Request</h3>
-<p><code>GET /v1/articles/{article_id}/main_image</code></p>
+<p><code>GET /articles/{article_id}/main_image</code></p>
 <h3 id='query-parameters'>Query Parameters</h3>
 <table><thead>
 <tr>
@@ -573,7 +554,7 @@
 </span></code></pre>
 <p>This endpoint retrieves keywords of a specific article.</p>
 <h3 id='http-request-4'>HTTP Request</h3>
-<p><code>GET /v1/articles/{article_id}/keywords</code></p>
+<p><code>GET /articles/{article_id}/keywords</code></p>
 <h2 id='get-access-token'>Get access token</h2>
 <blockquote>
 <p>API returns JSON structured like this:</p>
@@ -585,7 +566,7 @@
 </span></code></pre>
 <p>This endpoint retrieves an access token for fetching article content.</p>
 <h3 id='http-request-5'>HTTP Request</h3>
-<p><code>GET /v1/articles/{article_id}/access_key</code></p>
+<p><code>GET /articles/{article_id}/access_key</code></p>
 <h3 id='query-parameters-2'>Query Parameters</h3>
 <table><thead>
 <tr>
@@ -707,7 +688,7 @@
 </span></code></pre>
 <p>This endpoint retrieves article content.</p>
 <h3 id='http-request-6'>HTTP Request</h3>
-<p><code>GET /v1/articles/{article_id}/text.json</code></p>
+<p><code>GET /articles/{article_id}/text.json</code></p>
 <h3 id='query-parameters-3'>Query Parameters</h3>
 <table><thead>
 <tr>
@@ -719,13 +700,13 @@
 <tr>
 <td>access_token</td>
 <td>required</td>
-<td>This token is from the response of <code>GET /v1/articles/{article_id}/access_key</code>. It should be valid and not expired.</td>
+<td>This token is from the response of <code>GET /articles/{article_id}/access_key</code>. It should be valid and not expired.</td>
 </tr>
 </tbody></table>
 <h1 id='images'>Images</h1><h2 id='get-specific-image'>Get specific image</h2>
 <p>This endpoint retrieves specific image in article json.</p>
 <h3 id='http-request'>HTTP Request</h3>
-<p><code>GET /v1/images/{image_id}(/{size})</code></p>
+<p><code>GET /images/{image_id}(/{size})</code></p>
 <h3 id='query-parameters'>Query Parameters</h3>
 <table><thead>
 <tr>
@@ -754,11 +735,11 @@
 </span></code></pre>
 <p>This endpoint retrieves information of specific video.</p>
 <h3 id='http-request'>HTTP Request</h3>
-<p><code>GET /v1/videos/{video_id}</code></p>
+<p><code>GET /videos/{video_id}</code></p>
 <h2 id='get-video-thumbnail'>Get video thumbnail</h2>
 <p>This endpoint retrieves thumbnail of specific video.</p>
 <h3 id='http-request-2'>HTTP Request</h3>
-<p><code>GET /v1/videos/{video_id}(/{size})</code></p>
+<p><code>GET /videos/{video_id}(/{size})</code></p>
 <h3 id='query-parameters'>Query Parameters</h3>
 <table><thead>
 <tr>
@@ -776,7 +757,7 @@
 <h2 id='get-video-content'>Get video content</h2>
 <p>This endpoint retrieves video in article json.</p>
 <h3 id='http-request-3'>HTTP Request</h3>
-<p><code>GET /v1/videos/{video_id}/playback</code></p>
+<p><code>GET /videos/{video_id}/playback</code></p>
 <h3 id='query-parameters-2'>Query Parameters</h3>
 <table><thead>
 <tr>
@@ -788,7 +769,7 @@
 <tr>
 <td>access_token</td>
 <td>required</td>
-<td>This token is from the response of <code>GET /v1/articles/{article_id}/access_key</code>. It should be valid and not expired.</td>
+<td>This token is from the response of <code>GET /articles/{article_id}/access_key</code>. It should be valid and not expired.</td>
 </tr>
 </tbody></table>
 <h1 id='audios'>Audios</h1><h2 id='get-audio-info'>Get audio info</h2>
@@ -803,11 +784,11 @@
 </span></code></pre>
 <p>This endpoint retrieves information of specific audio.</p>
 <h3 id='http-request'>HTTP Request</h3>
-<p><code>GET /v1/audios/{audio_id}</code></p>
+<p><code>GET /audios/{audio_id}</code></p>
 <h2 id='get-audio-content'>Get audio content</h2>
 <p>This endpoint retrieves audio in article json.</p>
 <h3 id='http-request-2'>HTTP Request</h3>
-<p><code>GET /v1/audios/{audio_id}/playback</code></p>
+<p><code>GET /audios/{audio_id}/playback</code></p>
 <h3 id='query-parameters'>Query Parameters</h3>
 <table><thead>
 <tr>
@@ -819,7 +800,7 @@
 <tr>
 <td>access_token</td>
 <td>required</td>
-<td>This token is from the response of <code>GET /v1/articles/{article_id}/access_key</code>. It should be valid and not expired.</td>
+<td>This token is from the response of <code>GET /articles/{article_id}/access_key</code>. It should be valid and not expired.</td>
 </tr>
 </tbody></table>
 <h1 id='errors'>Errors</h1>
