@@ -1,22 +1,17 @@
 # Errors
 
-<aside class="notice">
-This error section is stored in a separate file in <code>includes/_errors.md</code>. Slate allows you to optionally separate out your docs into many files...just save them to the <code>includes</code> folder and add them to the top of your <code>index.md</code>'s frontmatter. Files are included in the order listed.
-</aside>
-
-The Kittn API uses the following error codes:
+Kono smarticle API uses the following error codes:
 
 
-Error Code | Meaning
----------- | -------
-400 | Bad Request -- Your request is invalid.
-401 | Unauthorized -- Your API key is wrong.
-403 | Forbidden -- The kitten requested is hidden for administrators only.
-404 | Not Found -- The specified kitten could not be found.
-405 | Method Not Allowed -- You tried to access a kitten with an invalid method.
-406 | Not Acceptable -- You requested a format that isn't json.
-410 | Gone -- The kitten requested has been removed from our servers.
-418 | I'm a teapot.
-429 | Too Many Requests -- You're requesting too many kittens! Slow down!
-500 | Internal Server Error -- We had a problem with our server. Try again later.
-503 | Service Unavailable -- We're temporarily offline for maintenance. Please try again later.
+Error code | Error explanation | HTTP status code
+---------- | ----------------- | ----------------
+40000 | Bad Request -- parameter missing or invalid. | 400
+40101 | Unauthorized -- access denied. | 401
+40102 | Unauthorized -- access token is invalid. | 401
+40400 | Not Found -- record not be found. | 404
+40401 | Not Found -- magazine not be found. |404
+40402 | Not Found -- issue not be found. | 404
+40403 | Not Found -- article not be found. | 404
+40404 | Not Found -- video not be found. | 404
+40405 | Not Found -- audio not be found. | 404
+99999 | Unexpected Error -- please contact us for support. | 403
