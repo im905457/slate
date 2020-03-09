@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>API Reference</title>
+    <title>Kono smarticle API Reference</title>
 
     <style>
       .highlight table td { padding: 5px; }
@@ -196,25 +196,22 @@
   color: #f92672;
 }
     </style>
-    <link href="stylesheets/screen.css" rel="stylesheet" media="screen" />
-    <link href="stylesheets/print.css" rel="stylesheet" media="print" />
-      <script src="javascripts/all.js"></script>
+    <link href="stylesheets/screen-a1ce949a.css" rel="stylesheet" media="screen" />
+    <link href="stylesheets/print-bccf8c07.css" rel="stylesheet" media="print" />
+      <script src="javascripts/all-c5541673.js"></script>
   </head>
 
-  <body class="index" data-languages="[&quot;shell&quot;,&quot;ruby&quot;,&quot;python&quot;,&quot;javascript&quot;]">
+  <body class="index" data-languages="[&quot;response&quot;]">
     <a href="#" id="nav-button">
       <span>
         NAV
-        <img src="images/navbar.png" alt="Navbar" />
+        <img src="images/navbar-cad8cdcb.png" alt="Navbar" />
       </span>
     </a>
     <div class="toc-wrapper">
-      <img src="images/logo.png" class="logo" alt="Logo" />
+      <img src="images/logo-1e815a84.png" class="logo" alt="Logo" />
         <div class="lang-selector">
-              <a href="#" data-language-name="shell">shell</a>
-              <a href="#" data-language-name="ruby">ruby</a>
-              <a href="#" data-language-name="python">python</a>
-              <a href="#" data-language-name="javascript">javascript</a>
+              <a href="#" data-language-name="response">response</a>
         </div>
         <div class="search">
           <input type="text" class="search" id="input-search" placeholder="Search">
@@ -223,21 +220,99 @@
       <ul id="toc" class="toc-list-h1">
           <li>
             <a href="#introduction" class="toc-h1 toc-link" data-title="Introduction">Introduction</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#endpoint" class="toc-h2 toc-link" data-title="Endpoint">Endpoint</a>
+                  </li>
+                  <li>
+                    <a href="#version" class="toc-h2 toc-link" data-title="Version">Version</a>
+                  </li>
+              </ul>
           </li>
           <li>
             <a href="#authentication" class="toc-h1 toc-link" data-title="Authentication">Authentication</a>
           </li>
           <li>
-            <a href="#kittens" class="toc-h1 toc-link" data-title="Kittens">Kittens</a>
+            <a href="#magazines" class="toc-h1 toc-link" data-title="Magazines">Magazines</a>
               <ul class="toc-list-h2">
                   <li>
-                    <a href="#get-all-kittens" class="toc-h2 toc-link" data-title="Get All Kittens">Get All Kittens</a>
+                    <a href="#get-all-magazines" class="toc-h2 toc-link" data-title="Get all magazines">Get all magazines</a>
                   </li>
                   <li>
-                    <a href="#get-a-specific-kitten" class="toc-h2 toc-link" data-title="Get a Specific Kitten">Get a Specific Kitten</a>
+                    <a href="#get-a-specific-magazine" class="toc-h2 toc-link" data-title="Get a specific magazine">Get a specific magazine</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#issues" class="toc-h1 toc-link" data-title="Issues">Issues</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#get-all-issues-of-a-magazine" class="toc-h2 toc-link" data-title="Get all issues of a magazine">Get all issues of a magazine</a>
                   </li>
                   <li>
-                    <a href="#delete-a-specific-kitten" class="toc-h2 toc-link" data-title="Delete a Specific Kitten">Delete a Specific Kitten</a>
+                    <a href="#get-a-specific-issue" class="toc-h2 toc-link" data-title="Get a specific issue">Get a specific issue</a>
+                  </li>
+                  <li>
+                    <a href="#get-price-of-a-specific-issue" class="toc-h2 toc-link" data-title="Get price of a specific issue">Get price of a specific issue</a>
+                  </li>
+                  <li>
+                    <a href="#get-cover-of-a-specific-issue" class="toc-h2 toc-link" data-title="Get cover of a specific issue">Get cover of a specific issue</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#articles" class="toc-h1 toc-link" data-title="Articles">Articles</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#get-all-articles-of-a-issue" class="toc-h2 toc-link" data-title="Get all articles of a issue">Get all articles of a issue</a>
+                  </li>
+                  <li>
+                    <a href="#get-a-specific-article" class="toc-h2 toc-link" data-title="Get a specific article">Get a specific article</a>
+                  </li>
+                  <li>
+                    <a href="#get-main-image-of-a-specific-article" class="toc-h2 toc-link" data-title="Get main image of a specific article">Get main image of a specific article</a>
+                  </li>
+                  <li>
+                    <a href="#get-keyword-of-a-specific-article" class="toc-h2 toc-link" data-title="Get keyword of a specific article">Get keyword of a specific article</a>
+                  </li>
+                  <li>
+                    <a href="#get-access-token" class="toc-h2 toc-link" data-title="Get access token">Get access token</a>
+                  </li>
+                  <li>
+                    <a href="#get-article-content" class="toc-h2 toc-link" data-title="Get article content">Get article content</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#images" class="toc-h1 toc-link" data-title="Images">Images</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#get-specific-image" class="toc-h2 toc-link" data-title="Get specific image">Get specific image</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#videos" class="toc-h1 toc-link" data-title="Videos">Videos</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#get-video-info" class="toc-h2 toc-link" data-title="Get video info">Get video info</a>
+                  </li>
+                  <li>
+                    <a href="#get-video-thumbnail" class="toc-h2 toc-link" data-title="Get video thumbnail">Get video thumbnail</a>
+                  </li>
+                  <li>
+                    <a href="#get-video-content" class="toc-h2 toc-link" data-title="Get video content">Get video content</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#audios" class="toc-h1 toc-link" data-title="Audios">Audios</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#get-audio-info" class="toc-h2 toc-link" data-title="Get audio info">Get audio info</a>
+                  </li>
+                  <li>
+                    <a href="#get-audio-content" class="toc-h2 toc-link" data-title="Get audio content">Get audio content</a>
                   </li>
               </ul>
           </li>
@@ -246,258 +321,573 @@
           </li>
       </ul>
         <ul class="toc-footer">
-            <li><a href='#'>Sign Up for a Developer Key</a></li>
-            <li><a href='https://github.com/lord/slate'>Documentation Powered by Slate</a></li>
+            <li><a href='https://github.com/slatedocs/slate'>Documentation Powered by Slate</a></li>
         </ul>
     </div>
     <div class="page-wrapper">
       <div class="dark-box"></div>
       <div class="content">
         <h1 id='introduction'>Introduction</h1>
-<p>Welcome to the Kittn API! You can use our API to access Kittn API endpoints, which can get information on various cats, kittens, and breeds in our database.</p>
-
-<p>We have language bindings in Shell, Ruby, Python, and JavaScript! You can view code examples in the dark area to the right, and you can switch the programming language of the examples with the tabs in the top right.</p>
-
-<p>This example API documentation page was created with <a href="https://github.com/lord/slate">Slate</a>. Feel free to edit it and use it as a base for your own API&#39;s documentation.</p>
+<p>Welcome to the Kono smarticle API! You can use our API to access API endpoints, which can get content of magazines, articles, and various article assets in Kono smarticle reading service.</p>
+<h3 id='endpoint'>Endpoint</h3>
+<table><thead>
+<tr>
+<th>env</th>
+<th>host</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>prod</td>
+<td>TBD</td>
+</tr>
+<tr>
+<td>dev</td>
+<td>https://smarticle-api.sandbox.thekono.com</td>
+</tr>
+</tbody></table>
+<h3 id='version'>Version</h3>
+<p>Current version: v1</p>
 <h1 id='authentication'>Authentication</h1>
+<p>Kono smarticle expects for the API key to be included in all API requests to the server in a header that looks like the following:</p>
+
+<p><code>X-Smarticle-Id: smarticle_api_key</code></p>
+
+<p>You must replace <code>smarticle_api_key</code> with your API key.</p>
+<h1 id='magazines'>Magazines</h1><h2 id='get-all-magazines'>Get all magazines</h2>
 <blockquote>
-<p>To authorize, use this code:</p>
-</blockquote>
-<pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
-
-<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
-</code></pre><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">kittn</span>
-
-<span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="o">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
-</code></pre><pre class="highlight shell tab-shell"><code><span class="c"># With shell, you can just pass the correct header with each request</span>
-curl <span class="s2">"api_endpoint_here"</span>
-  -H <span class="s2">"Authorization: meowmeowmeow"</span>
-</code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">kittn</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'kittn'</span><span class="p">);</span>
-
-<span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">kittn</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">);</span>
-</code></pre>
-<blockquote>
-<p>Make sure to replace <code>meowmeowmeow</code> with your API key.</p>
-</blockquote>
-
-<p>Kittn uses API keys to allow access to the API. You can register a new Kittn API key at our <a href="http://example.com/developers">developer portal</a>.</p>
-
-<p>Kittn expects for the API key to be included in all API requests to the server in a header that looks like the following:</p>
-
-<p><code>Authorization: meowmeowmeow</code></p>
-
-<aside class="notice">
-You must replace <code>meowmeowmeow</code> with your personal API key.
-</aside>
-<h1 id='kittens'>Kittens</h1><h2 id='get-all-kittens'>Get All Kittens</h2><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
-
-<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
-<span class="n">api</span><span class="p">.</span><span class="nf">kittens</span><span class="p">.</span><span class="nf">get</span>
-</code></pre><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">kittn</span>
-
-<span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="o">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
-<span class="n">api</span><span class="o">.</span><span class="n">kittens</span><span class="o">.</span><span class="n">get</span><span class="p">()</span>
-</code></pre><pre class="highlight shell tab-shell"><code>curl <span class="s2">"http://example.com/api/kittens"</span>
-  -H <span class="s2">"Authorization: meowmeowmeow"</span>
-</code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">kittn</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'kittn'</span><span class="p">);</span>
-
-<span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">kittn</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">);</span>
-<span class="kd">let</span> <span class="nx">kittens</span> <span class="o">=</span> <span class="nx">api</span><span class="p">.</span><span class="nx">kittens</span><span class="p">.</span><span class="nx">get</span><span class="p">();</span>
-</code></pre>
-<blockquote>
-<p>The above command returns JSON structured like this:</p>
+<p>API returns JSON structured like this:</p>
 </blockquote>
 <pre class="highlight json tab-json"><code><span class="p">[</span><span class="w">
   </span><span class="p">{</span><span class="w">
-    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Fluffums"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"breed"</span><span class="p">:</span><span class="w"> </span><span class="s2">"calico"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"fluffiness"</span><span class="p">:</span><span class="w"> </span><span class="mi">6</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"cuteness"</span><span class="p">:</span><span class="w"> </span><span class="mi">7</span><span class="w">
-  </span><span class="p">},</span><span class="w">
-  </span><span class="p">{</span><span class="w">
-    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Max"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"breed"</span><span class="p">:</span><span class="w"> </span><span class="s2">"unknown"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"fluffiness"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"cuteness"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="w">
+    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"vogue"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"vogue"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"VOGUE"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"記錄逾百年頂尖流行，被喻為「時尚聖經」的VOGUE雜誌是時尚類國際中文版女性雜誌的領導者。</span><span class="se">\r\n</span><span class="s2">VOGUE時尚雜誌每月均為您報導來自巴黎、米蘭、紐約頂尖時裝設計大師的流行預言及獨家專訪，帶您永遠走在時尚與品味的頂端！"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"is_left_flip"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
   </span><span class="p">}</span><span class="w">
 </span><span class="p">]</span><span class="w">
 </span></code></pre>
-<p>This endpoint retrieves all kittens.</p>
+<p>This endpoint retrieves all magazines.</p>
 <h3 id='http-request'>HTTP Request</h3>
-<p><code>GET http://example.com/api/kittens</code></p>
+<p><code>GET /v1/magazines</code></p>
+<h2 id='get-a-specific-magazine'>Get a specific magazine</h2>
+<blockquote>
+<p>API returns JSON structured like this:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"vogue"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"vogue"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"VOGUE"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"記錄逾百年頂尖流行，被喻為「時尚聖經」的VOGUE雜誌是時尚類國際中文版女性雜誌的領導者。</span><span class="se">\r\n</span><span class="s2">VOGUE時尚雜誌每月均為您報導來自巴黎、米蘭、紐約頂尖時裝設計大師的流行預言及獨家專訪，帶您永遠走在時尚與品味的頂端！"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"is_left_flip"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<p>This endpoint retrieves a specific magazine.</p>
+<h3 id='http-request-2'>HTTP Request</h3>
+<p><code>GET /v1/magazines/{magazine_id}</code></p>
+<h1 id='issues'>Issues</h1><h2 id='get-all-issues-of-a-magazine'>Get all issues of a magazine</h2>
+<blockquote>
+<p>API returns JSON structured like this:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">[</span><span class="w">
+  </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"5e14a2c0aa68d"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"bid"</span><span class="p">:</span><span class="w"> </span><span class="s2">"5e14a2c0aa68d"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"issue_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020/1月號 第280期"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"published_at"</span><span class="p">:</span><span class="w"> </span><span class="mi">1578410688</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"available_from"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"available_to"</span><span class="p">:</span><span class="w"> </span><span class="mi">2147483640</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"曾之喬說自己最大的意義是分享，她喜歡把自己所體會與得到的，不斷的分出去，她說分了不會變少，反而會感覺越來越豐富。"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"off_shelf_at"</span><span class="p">:</span><span class="w"> </span><span class="mi">1578410912</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"has_fit_reading"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"has_audio"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"has_video"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"has_pdf"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"is_adult"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"is_left_flip"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"cover_version"</span><span class="p">:</span><span class="w"> </span><span class="mi">1578410912</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"bundle_version"</span><span class="p">:</span><span class="w"> </span><span class="mi">1578410912</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"magazine_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"vogue"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"magazine_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"VOGUE"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"year"</span><span class="p">:</span><span class="w"> </span><span class="mi">2020</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">]</span><span class="w">
+</span></code></pre>
+<p>This endpoint retrieves all issues of a magazine.</p>
+<h3 id='http-request'>HTTP Request</h3>
+<p><code>GET /v1/magazines/{magazine_id}/issues</code></p>
+<h2 id='get-a-specific-issue'>Get a specific issue</h2>
+<blockquote>
+<p>API returns JSON structured like this:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"5e14a2c0aa68d"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"bid"</span><span class="p">:</span><span class="w"> </span><span class="s2">"5e14a2c0aa68d"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"issue_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020/1月號 第280期"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"published_at"</span><span class="p">:</span><span class="w"> </span><span class="mi">1578410688</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"available_from"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"available_to"</span><span class="p">:</span><span class="w"> </span><span class="mi">2147483640</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"曾之喬說自己最大的意義是分享，她喜歡把自己所體會與得到的，不斷的分出去，她說分了不會變少，反而會感覺越來越豐富。"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"off_shelf_at"</span><span class="p">:</span><span class="w"> </span><span class="mi">1578410912</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"has_fit_reading"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"has_audio"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"has_video"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"has_pdf"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"is_adult"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"is_left_flip"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"cover_version"</span><span class="p">:</span><span class="w"> </span><span class="mi">1578410912</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"bundle_version"</span><span class="p">:</span><span class="w"> </span><span class="mi">1578410912</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"magazine_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"vogue"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"magazine_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"VOGUE"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"year"</span><span class="p">:</span><span class="w"> </span><span class="mi">2020</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<p>This endpoint retrieves a specific issue.</p>
+<h3 id='http-request-2'>HTTP Request</h3>
+<p><code>GET /v1/issues/{issue_id}</code></p>
+<h2 id='get-price-of-a-specific-issue'>Get price of a specific issue</h2>
+<blockquote>
+<p>API returns JSON structured like this:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"price_per_article"</span><span class="p">:</span><span class="w"> </span><span class="s2">"4.5"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<p>This endpoint retrieves price of a specific issue.</p>
+<h3 id='http-request-3'>HTTP Request</h3>
+<p><code>GET /v1/issues/{issue_id}/price</code></p>
+<h2 id='get-cover-of-a-specific-issue'>Get cover of a specific issue</h2>
+<p>This endpoint retrieves cover of a specific issue.</p>
+<h3 id='http-request-4'>HTTP Request</h3>
+<p><code>GET /v1/issues/{issue_id}/cover(/{size})</code></p>
 <h3 id='query-parameters'>Query Parameters</h3>
 <table><thead>
 <tr>
 <th>Parameter</th>
-<th>Default</th>
+<th>Required</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>include_cats</td>
-<td>false</td>
-<td>If set to true, the result will also include cats.</td>
+<td>size</td>
+<td>optional</td>
+<td>large(default)<br/>medium<br/>small</td>
 </tr>
 <tr>
-<td>available</td>
-<td>true</td>
-<td>If set to false, the result will include kittens that have already been adopted.</td>
+<td>accept_webp</td>
+<td>optional</td>
+<td>The image file extension will be <code>.webp</code> if the <code>accept_webp</code> is given. Example: <code>accept_webp=1</code>. Otherwise, The image file extension will be <code>.jpg</code></td>
 </tr>
 </tbody></table>
-
-<aside class="success">
-Remember — a happy kitten is an authenticated kitten!
-</aside>
-<h2 id='get-a-specific-kitten'>Get a Specific Kitten</h2><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
-
-<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
-<span class="n">api</span><span class="p">.</span><span class="nf">kittens</span><span class="p">.</span><span class="nf">get</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
-</code></pre><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">kittn</span>
-
-<span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="o">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
-<span class="n">api</span><span class="o">.</span><span class="n">kittens</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
-</code></pre><pre class="highlight shell tab-shell"><code>curl <span class="s2">"http://example.com/api/kittens/2"</span>
-  -H <span class="s2">"Authorization: meowmeowmeow"</span>
-</code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">kittn</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'kittn'</span><span class="p">);</span>
-
-<span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">kittn</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">);</span>
-<span class="kd">let</span> <span class="nx">max</span> <span class="o">=</span> <span class="nx">api</span><span class="p">.</span><span class="nx">kittens</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
-</code></pre>
+<h1 id='articles'>Articles</h1><h2 id='get-all-articles-of-a-issue'>Get all articles of a issue</h2>
 <blockquote>
-<p>The above command returns JSON structured like this:</p>
+<p>API returns JSON structured like this:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">[</span><span class="w">
+  </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"fc10d875-7339-4e3b-a690-e95870d27607"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"article_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"fc10d875-7339-4e3b-a690-e95870d27607"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"vogue diary"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"intro"</span><span class="p">:</span><span class="w"> </span><span class="s2">"金豬年已經到了尾聲，錢鼠已經迫不及待出來宣告新氣象，Tory Burch為即將來到的農曆鼠年推出討喜又帶有貴氣的錢鼠-Rita(麗塔)與你一同慶新年，各式精緻商品都能發現她的迷人身。Rita穿著優雅的軟呢外套，領口搭配祖母綠的皮革緄邊，胸口縫製金色雙T Logo 珍珠母貝鈕釦，左手提著迷你小包，右邊口袋還放著她最愛的起士，擬人化的造型讓人莞爾一笑。"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"sequence"</span><span class="p">:</span><span class="w"> </span><span class="mi">54</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"author"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"plan_type"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"is_highlight"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"page_number"</span><span class="p">:</span><span class="w"> </span><span class="mi">206</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"end_page"</span><span class="p">:</span><span class="w"> </span><span class="mi">207</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"has_fit_reading"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"has_audio"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"has_video"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"has_pdf"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"main_image_version"</span><span class="p">:</span><span class="w"> </span><span class="mi">1578410912</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"text_version"</span><span class="p">:</span><span class="w"> </span><span class="mi">1578410912</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"issue_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"5e14a2c0aa68d"</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">]</span><span class="w">
+</span></code></pre>
+<p>This endpoint retrieves all articles of a issue.</p>
+<h3 id='http-request'>HTTP Request</h3>
+<p><code>GET /v1/issues/{issue_id}/articles</code></p>
+<h2 id='get-a-specific-article'>Get a specific article</h2>
+<blockquote>
+<p>API returns JSON structured like this:</p>
 </blockquote>
 <pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
-  </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Max"</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"breed"</span><span class="p">:</span><span class="w"> </span><span class="s2">"unknown"</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"fluffiness"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"cuteness"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="w">
+  </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"fc10d875-7339-4e3b-a690-e95870d27607"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"article_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"fc10d875-7339-4e3b-a690-e95870d27607"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"vogue diary"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"intro"</span><span class="p">:</span><span class="w"> </span><span class="s2">"金豬年已經到了尾聲，錢鼠已經迫不及待出來宣告新氣象，Tory Burch為即將來到的農曆鼠年推出討喜又帶有貴氣的錢鼠-Rita(麗塔)與你一同慶新年，各式精緻商品都能發現她的迷人身。Rita穿著優雅的軟呢外套，領口搭配祖母綠的皮革緄邊，胸口縫製金色雙T Logo 珍珠母貝鈕釦，左手提著迷你小包，右邊口袋還放著她最愛的起士，擬人化的造型讓人莞爾一笑。"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"sequence"</span><span class="p">:</span><span class="w"> </span><span class="mi">54</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"author"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"plan_type"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"is_highlight"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"page_number"</span><span class="p">:</span><span class="w"> </span><span class="mi">206</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"end_page"</span><span class="p">:</span><span class="w"> </span><span class="mi">207</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"has_fit_reading"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"has_audio"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"has_video"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"has_pdf"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"main_image_version"</span><span class="p">:</span><span class="w"> </span><span class="mi">1578410912</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"text_version"</span><span class="p">:</span><span class="w"> </span><span class="mi">1578410912</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"issue_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"5e14a2c0aa68d"</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
-<p>This endpoint retrieves a specific kitten.</p>
-
-<aside class="warning">Inside HTML code blocks like this one, you can't use Markdown, so use <code>&lt;code&gt;</code> blocks to denote code.</aside>
+<p>This endpoint retrieves a specific article.</p>
 <h3 id='http-request-2'>HTTP Request</h3>
-<p><code>GET http://example.com/kittens/&lt;ID&gt;</code></p>
-<h3 id='url-parameters'>URL Parameters</h3>
+<p><code>GET /v1/articles/{article_id}</code></p>
+<h2 id='get-main-image-of-a-specific-article'>Get main image of a specific article</h2>
+<p>This endpoint retrieves main image of a specific article.</p>
+<h3 id='http-request-3'>HTTP Request</h3>
+<p><code>GET /v1/articles/{article_id}/main_image</code></p>
+<h3 id='query-parameters'>Query Parameters</h3>
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Required</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>ID</td>
-<td>The ID of the kitten to retrieve</td>
+<td>size</td>
+<td>optional</td>
+<td>large(default)<br/>medium<br/>small</td>
+</tr>
+<tr>
+<td>crop</td>
+<td>optional</td>
+<td>original(default)<br/>1:1<br/>4:3<br/>9:5</td>
+</tr>
+<tr>
+<td>accept_webp</td>
+<td>optional</td>
+<td>The image file extension will be <code>.webp</code> if the <code>accept_webp</code> is given. Example: <code>accept_webp=1</code>. Otherwise, The image file extension will be <code>.jpg</code></td>
 </tr>
 </tbody></table>
-<h2 id='delete-a-specific-kitten'>Delete a Specific Kitten</h2><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
-
-<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
-<span class="n">api</span><span class="p">.</span><span class="nf">kittens</span><span class="p">.</span><span class="nf">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
-</code></pre><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">kittn</span>
-
-<span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="o">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
-<span class="n">api</span><span class="o">.</span><span class="n">kittens</span><span class="o">.</span><span class="n">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
-</code></pre><pre class="highlight shell tab-shell"><code>curl <span class="s2">"http://example.com/api/kittens/2"</span>
-  -X DELETE
-  -H <span class="s2">"Authorization: meowmeowmeow"</span>
-</code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">kittn</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'kittn'</span><span class="p">);</span>
-
-<span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">kittn</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">);</span>
-<span class="kd">let</span> <span class="nx">max</span> <span class="o">=</span> <span class="nx">api</span><span class="p">.</span><span class="nx">kittens</span><span class="p">.</span><span class="k">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
-</code></pre>
+<h2 id='get-keyword-of-a-specific-article'>Get keyword of a specific article</h2>
 <blockquote>
-<p>The above command returns JSON structured like this:</p>
+<p>API returns JSON structured like this:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">[</span><span class="w">
+  </span><span class="s2">"食物"</span><span class="p">,</span><span class="w"> </span><span class="s2">"台北"</span><span class="p">,</span><span class="w"> </span><span class="s2">"教學"</span><span class="p">,</span><span class="w"> </span><span class="s2">"光碟"</span><span class="w">
+</span><span class="p">]</span><span class="w">
+</span></code></pre>
+<p>This endpoint retrieves keywords of a specific article.</p>
+<h3 id='http-request-4'>HTTP Request</h3>
+<p><code>GET /v1/articles/{article_id}/keywords</code></p>
+<h2 id='get-access-token'>Get access token</h2>
+<blockquote>
+<p>API returns JSON structured like this:</p>
 </blockquote>
 <pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
-  </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"deleted"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">":("</span><span class="w">
+  </span><span class="s2">"access_token"</span><span class="p">:</span><span class="w"> </span><span class="s2">"eyJhbGciOiJIUzI1NiJ9.eyJzIjoicyJ9.yqcB795dFYX1zeE2HntaZiJhjozlewwJeZr4G-Uq-wQ"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"expired_at"</span><span class="p">:</span><span class="w"> </span><span class="mi">1580935149</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
-<p>This endpoint deletes a specific kitten.</p>
-<h3 id='http-request-3'>HTTP Request</h3>
-<p><code>DELETE http://example.com/kittens/&lt;ID&gt;</code></p>
-<h3 id='url-parameters-2'>URL Parameters</h3>
+<p>This endpoint retrieves an access token for fetching article content.</p>
+<h3 id='http-request-5'>HTTP Request</h3>
+<p><code>GET /v1/articles/{article_id}/access_key</code></p>
+<h3 id='query-parameters-2'>Query Parameters</h3>
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Required</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>ID</td>
-<td>The ID of the kitten to delete</td>
+<td>t</td>
+<td>required</td>
+<td>current UNIX timestamp in seconds.</td>
+</tr>
+<tr>
+<td>uid</td>
+<td>required</td>
+<td>unique user id.</td>
+</tr>
+<tr>
+<td>secret</td>
+<td>required</td>
+<td>SHA256 of parameters string.</td>
+</tr>
+</tbody></table>
+
+<ul>
+<li>Concat all parameters and smarticle api secret with pipe as following format:<br/>
+<code>{article_id}|{t}|{uid}|{smarticle_api_secret}</code></li>
+<li>Digest the string below SHA256 to get <code>secret</code></li>
+<li>Example:
+
+<ul>
+<li>article_id: <code>c97e959b-cf6a-43a1-9795-493ece71499c</code></li>
+<li>t: <code>1580925055</code></li>
+<li>uid: <code>12345</code></li>
+<li>smarticle_api_secret: <code>69cbc3ae8b97</code></li>
+<li>Then, the parameters string will be:<br/>
+<code>c97e959b-cf6a-43a1-9795-493ece71499c|1580925055|12345|69cbc3ae8b97</code><br/></li>
+<li>And use SHA256 to digest the string to get <code>secret</code>:<br/>
+<code>c17719b21b26f2710679ab28f9e84c0e4338b58e013e81ba35355ecdc3c287e8</code><br/><br/></li>
+</ul></li>
+</ul>
+
+<p>You must replace <code>69cbc3ae8b97</code> with your API secret.</p>
+<h2 id='get-article-content'>Get article content</h2>
+<blockquote>
+<p>API returns JSON structured like this:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"styles"</span><span class="p">:</span><span class="w"> </span><span class="p">{},</span><span class="w">
+  </span><span class="s2">"elements"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"style"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"element"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="s2">"content"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Angus Chiang 身上始終散發著空靈的夏日氣息，讓人聯想到電影《藍色大門》片尾，騎著自行車穿行在臺北街頭的少年。他的身後，是一群在台灣流行文化的滋潤下幸福快樂成長的一代人。"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"dtype"</span><span class="p">:</span><span class="w"> </span><span class="s2">"TEXT"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"client-4yojlqmfi4epouxz6o8jdb"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"stype"</span><span class="p">:</span><span class="w"> </span><span class="s2">"PREFACE"</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"style"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"element"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="s2">"content"</span><span class="p">:</span><span class="w"> </span><span class="s2">"跟 Angus Chiang 的見面地點就在他工作室樓下的咖啡店，他帶著團隊把工作室從臺北搬到上海不到兩年時間。與他聊天，就像是走入了一幕又一幕的台灣青春電影。&lt;br&gt;&lt;br&gt;從動畫創作專業改行時裝設計的 Angus Chiang 是土生土長的臺北男孩，他的設計根植於從1990年代至今的台灣本土民俗文化與流行文化，並賦予它們幽默和視覺化的解讀。因為太能引發台灣本土年輕人的共鳴，他最早期的設計在台灣年輕人眼中娛樂性比穿著性更大。「台灣有個論壇叫 PTT，我經常看到上面有人質疑我，不過也有很多支持我的人。」因為他所使用的設計元素與靈感來源，通常是台灣年輕人目之所見的、觸手可及的東西，對他們來說沒有什麼衝擊性，反而有偷懶的嫌疑。「PTT 上有很多聲音，比如『他哪是在做衣服，他根本就是在玩！』」 但在溫哥華時裝周、倫敦時裝周、巴黎時裝周組委會和 LVHM 大獎的評委會眼中，這些台灣獨有的元素反而帶來了巨大的文化衝擊，當然 Angus 也用他天馬行空的想象、恰到好處的克制，以及極強的視覺化表現力，生動地講述了他所處的社會時代和他所處的獨特地域文化的故事。&lt;br&gt;&lt;br&gt;早前在巴黎男裝周發表的2020春夏系列，主題叫作「愛的主打歌」。這一次，他與台灣知名的音樂公司「滾石唱片」和「玫瑰唱片」合作，打造出一個「安可唱片（Angus Records&amp;amp;Tapes）」，這是設計師對台灣流行音樂黃金時代的紀念，劉若英、孔令奇和徐懷鈺的〈大家來戀愛〉、伍佰的〈挪威的森林〉、張震嶽的〈愛我別走〉都成為秀場的背景音樂。還特別邀請台灣著名的音樂製作人黃韻玲錄製了電台主持的聲音，音樂、廣告、主持人旁邊穿插營造出一種台灣廣播電台興盛時代的熟悉感。整個系列的設計仍然回歸到 Angus Chiang 擅長的對台灣流行文化的解構與細節把玩之中，肩部廓形帶來一種流行巨星登場的氣勢，外套與T恤外的牛角扣綑紮，設計師用軟耳塞製成了牛角扣的樣子；口袋設計模擬了 CD 收納袋的樣子，唱片上黃色的促銷貼紙和反光銀色防偽標識圖案，成為系列中時髦的點綴。&lt;br&gt;&lt;br&gt;本就是在台灣流行音樂與娛樂中浸泡長大的孩子，Angus 在大學時期的作業設計就模仿過台灣嘻哈歌手羅百吉。對於他來說，音樂用於時裝設計是很好玩的，比如把以前歌手的封面造型轉化成 Angus 自己的圖。臉、嘴都是自己拼上去的，但遠看很像那個歌手，有一種萬聖節變裝派對或是 Cosplay 節日的惡趣味，甚至能與當代藝術家 Cindy Sherman 的那一套自導自演的扮演攝影藝術達成一種理念的貫通。&lt;br&gt;&lt;br&gt;作為一個在《偶像百分百》、《超級星光大道》、《康熙來了》等綜藝節目影響中長大的小孩，Angus Chiang 就是一本行走的亞洲流行文化活字典，他甚至有想過將秀場的一組模特打造成時髦的F4等形式。但經歷了1990年代至2000年代台灣流行文化最蓬勃的時期後，他注意到流行文化產業的變化。「還在念國中的時候，每個周六都有演唱會，還有什麼免費的專輯慶功會啊、唱片簽售會啊，觀眾拿著 CD 就可以進場；或者買杯飲料，憑那個瓶蓋就可以進場聽演唱會。明星們都在，周杰倫、張韶涵、潘瑋柏、蔡依林都在。大概從高中的時候開始，這種活動就愈來愈少了。以前專輯破百萬、80萬，明星們還會手持一個小錘出來錘冰。後來銷量10萬的唱片都能破冰慶祝了，最後也沒人再做這種事了。我覺得特別可惜，所以這個新系列是從1978年講起，把黑膠、卡帶、CD、MP3，到現在的線上音樂的演變，夠過一場秀體現到一個側面。」聊到這裡，他的聲音帶著點遺憾，彷彿一個年輕人手握一把鑰匙，卻再也打不開故居的門。而現在的他只要一回家，就會打開電視，追看由台灣明星大小S、阿雅和范曉萱一起錄製的綜藝真人秀《我們是真正的朋友》。雖然這群陪伴著他長大的台灣流行文化符號依然活躍在屏幕上，但有些東西已經微妙地悄然改變了。"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"dtype"</span><span class="p">:</span><span class="w"> </span><span class="s2">"TEXT"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"client-nte6q35i8nhja6fw8wizo"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"stype"</span><span class="p">:</span><span class="w"> </span><span class="s2">"PARAGRAPH"</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"style"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"element"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="s2">"content"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"dtype"</span><span class="p">:</span><span class="w"> </span><span class="s2">"IMAGE"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"08313ee8-3227-11ea-900c-06737616480d"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"stype"</span><span class="p">:</span><span class="w"> </span><span class="s2">"IMAGE"</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"style"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"element"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="s2">"content"</span><span class="p">:</span><span class="w"> </span><span class="s2">"『「工頭在搭建舞臺的時候很緊張、壓力很大，他們嚼檳榔，工地上都是一堆一堆的檳榔渣。」每每這樣想著，Angus 能在異鄉的夜晚笑出聲來。』"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"dtype"</span><span class="p">:</span><span class="w"> </span><span class="s2">"TEXT"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"client-sjazuuqnl0jda796it4g5e"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"stype"</span><span class="p">:</span><span class="w"> </span><span class="s2">"QUOTE"</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="s2">"subtitle"</span><span class="p">:</span><span class="w"> </span><span class="s2">"uno FASHION｜何處是故鄉 HOME TOWN"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"version"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1.0.0"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"language"</span><span class="p">:</span><span class="w"> </span><span class="s2">"zh_TW"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"author"</span><span class="p">:</span><span class="w"> </span><span class="s2">"採訪、文字╲海淼"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"has_audio"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"sequence"</span><span class="p">:</span><span class="w"> </span><span class="mi">26</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"has_fit_reading"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"has_video"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"images"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"content"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"dtype"</span><span class="p">:</span><span class="w"> </span><span class="s2">"IMAGE"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"08313ee8-3227-11ea-900c-06737616480d"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"stype"</span><span class="p">:</span><span class="w"> </span><span class="s2">"IMAGE"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="s2">"magazine"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"bid"</span><span class="p">:</span><span class="w"> </span><span class="s2">"5e15ec79c7d90"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"issue"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020/1月號 第245期"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"men's uno男人誌"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"mens_uno"</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="s2">"intro"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Angus Chiang 身上始終散發著空靈的夏日氣息，讓人聯想到電影《藍色大門》片尾，騎著自行車穿行在臺北街頭的少年。他的身後，是一群在台灣流行文化的滋潤下幸福快樂成長的一代人。"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"page_number"</span><span class="p">:</span><span class="w"> </span><span class="mi">95</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"keywords"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"台灣"</span><span class="p">,</span><span class="w"> </span><span class="s2">"文化"</span><span class="p">,</span><span class="w"> </span><span class="s2">"唱片"</span><span class="p">],</span><span class="w">
+  </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ANGUS CHIANG　他的背後是台灣流行文化孕育的一代"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"has_translation"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"article_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"b16d037a-9ff5-420d-a890-025a4452f44c"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"end_page"</span><span class="p">:</span><span class="w"> </span><span class="mi">96</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<p>This endpoint retrieves article content.</p>
+<h3 id='http-request-6'>HTTP Request</h3>
+<p><code>GET /v1/articles/{article_id}/text.json</code></p>
+<h3 id='query-parameters-3'>Query Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>access_token</td>
+<td>required</td>
+<td>This token is from the response of <code>GET /v1/articles/{article_id}/access_key</code>. It should be valid and not expired.</td>
+</tr>
+</tbody></table>
+<h1 id='images'>Images</h1><h2 id='get-specific-image'>Get specific image</h2>
+<p>This endpoint retrieves specific image in article json.</p>
+<h3 id='http-request'>HTTP Request</h3>
+<p><code>GET /v1/images/{image_id}(/{size})</code></p>
+<h3 id='query-parameters'>Query Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>size</td>
+<td>optional</td>
+<td>large(default)<br/>medium<br/>small</td>
+</tr>
+</tbody></table>
+<h1 id='videos'>Videos</h1><h2 id='get-video-info'>Get video info</h2>
+<blockquote>
+<p>API returns JSON structured like this:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"6047263652665361362"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"width"</span><span class="p">:</span><span class="w"> </span><span class="mi">1280</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"height"</span><span class="p">:</span><span class="w"> </span><span class="mi">720</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"length"</span><span class="p">:</span><span class="w"> </span><span class="mi">60</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"article_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0000615c-a5d8-4bfc-b7ac-48f46a761181"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<p>This endpoint retrieves information of specific video.</p>
+<h3 id='http-request'>HTTP Request</h3>
+<p><code>GET /v1/videos/{video_id}</code></p>
+<h2 id='get-video-thumbnail'>Get video thumbnail</h2>
+<p>This endpoint retrieves thumbnail of specific video.</p>
+<h3 id='http-request-2'>HTTP Request</h3>
+<p><code>GET /v1/videos/{video_id}(/{size})</code></p>
+<h3 id='query-parameters'>Query Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>size</td>
+<td>optional</td>
+<td>large(default)<br/>medium<br/>small</td>
+</tr>
+</tbody></table>
+<h2 id='get-video-content'>Get video content</h2>
+<p>This endpoint retrieves video in article json.</p>
+<h3 id='http-request-3'>HTTP Request</h3>
+<p><code>GET /v1/videos/{video_id}/playback</code></p>
+<h3 id='query-parameters-2'>Query Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>access_token</td>
+<td>required</td>
+<td>This token is from the response of <code>GET /v1/articles/{article_id}/access_key</code>. It should be valid and not expired.</td>
+</tr>
+</tbody></table>
+<h1 id='audios'>Audios</h1><h2 id='get-audio-info'>Get audio info</h2>
+<blockquote>
+<p>API returns JSON structured like this:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"6047263652665361362"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"length"</span><span class="p">:</span><span class="w"> </span><span class="mi">60</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"article_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0000615c-a5d8-4bfc-b7ac-48f46a761181"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<p>This endpoint retrieves information of specific audio.</p>
+<h3 id='http-request'>HTTP Request</h3>
+<p><code>GET /v1/audios/{audio_id}</code></p>
+<h2 id='get-audio-content'>Get audio content</h2>
+<p>This endpoint retrieves audio in article json.</p>
+<h3 id='http-request-2'>HTTP Request</h3>
+<p><code>GET /v1/audios/{audio_id}/playback</code></p>
+<h3 id='query-parameters'>Query Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>access_token</td>
+<td>required</td>
+<td>This token is from the response of <code>GET /v1/articles/{article_id}/access_key</code>. It should be valid and not expired.</td>
 </tr>
 </tbody></table>
 <h1 id='errors'>Errors</h1>
-<aside class="notice">
-This error section is stored in a separate file in <code>includes/_errors.md</code>. Slate allows you to optionally separate out your docs into many files...just save them to the <code>includes</code> folder and add them to the top of your <code>index.md</code>'s frontmatter. Files are included in the order listed.
-</aside>
-
-<p>The Kittn API uses the following error codes:</p>
+<p>Kono smarticle API uses the following error codes:</p>
 
 <table><thead>
 <tr>
-<th>Error Code</th>
-<th>Meaning</th>
+<th>Error code</th>
+<th>Error explanation</th>
+<th>HTTP status code</th>
 </tr>
 </thead><tbody>
 <tr>
+<td>40000</td>
+<td>Bad Request -- parameter missing or invalid.</td>
 <td>400</td>
-<td>Bad Request -- Your request is invalid.</td>
 </tr>
 <tr>
+<td>40101</td>
+<td>Unauthorized -- access denied.</td>
 <td>401</td>
-<td>Unauthorized -- Your API key is wrong.</td>
 </tr>
 <tr>
-<td>403</td>
-<td>Forbidden -- The kitten requested is hidden for administrators only.</td>
+<td>40102</td>
+<td>Unauthorized -- access token is invalid.</td>
+<td>401</td>
 </tr>
 <tr>
+<td>40400</td>
+<td>Not Found -- record not be found.</td>
 <td>404</td>
-<td>Not Found -- The specified kitten could not be found.</td>
 </tr>
 <tr>
-<td>405</td>
-<td>Method Not Allowed -- You tried to access a kitten with an invalid method.</td>
+<td>40401</td>
+<td>Not Found -- magazine not be found.</td>
+<td>404</td>
 </tr>
 <tr>
-<td>406</td>
-<td>Not Acceptable -- You requested a format that isn&#39;t json.</td>
+<td>40402</td>
+<td>Not Found -- issue not be found.</td>
+<td>404</td>
 </tr>
 <tr>
-<td>410</td>
-<td>Gone -- The kitten requested has been removed from our servers.</td>
+<td>40403</td>
+<td>Not Found -- article not be found.</td>
+<td>404</td>
 </tr>
 <tr>
-<td>418</td>
-<td>I&#39;m a teapot.</td>
+<td>40404</td>
+<td>Not Found -- video not be found.</td>
+<td>404</td>
 </tr>
 <tr>
-<td>429</td>
-<td>Too Many Requests -- You&#39;re requesting too many kittens! Slow down!</td>
+<td>40405</td>
+<td>Not Found -- audio not be found.</td>
+<td>404</td>
 </tr>
 <tr>
-<td>500</td>
-<td>Internal Server Error -- We had a problem with our server. Try again later.</td>
-</tr>
-<tr>
-<td>503</td>
-<td>Service Unavailable -- We&#39;re temporarily offline for maintenance. Please try again later.</td>
+<td>99999</td>
+<td>Unexpected Error -- please contact us for support.</td>
+<td>403</td>
 </tr>
 </tbody></table>
 
       </div>
       <div class="dark-box">
           <div class="lang-selector">
-                <a href="#" data-language-name="shell">shell</a>
-                <a href="#" data-language-name="ruby">ruby</a>
-                <a href="#" data-language-name="python">python</a>
-                <a href="#" data-language-name="javascript">javascript</a>
+                <a href="#" data-language-name="response">response</a>
           </div>
       </div>
     </div>
