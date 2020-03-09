@@ -11,6 +11,9 @@ includes:
   - magazines
   - issues
   - articles
+  - images
+  - videos
+  - audios
   - errors
 
 search: true
