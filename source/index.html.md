@@ -32,8 +32,8 @@ dev  | https://smarticle-api.sandbox.thekono.com
 
 # Authentication
 
-Kono smarticle uses API keys to allow access to the API. You can register a new API key at our [developer portal](http://example.com/developers).
-
 Kono smarticle expects for the API key to be included in all API requests to the server in a header that looks like the following:
 
 `X-Smarticle-Id: smarticle_api_key`
+
+You must replace <code>smarticle_api_key</code> with your API key.
