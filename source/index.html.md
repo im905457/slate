@@ -9,6 +9,7 @@ toc_footers:
 
 includes:
   - magazines
+  - issues
   - errors
 
 search: true
